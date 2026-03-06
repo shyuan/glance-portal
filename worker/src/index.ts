@@ -1,4 +1,4 @@
-import { Container, getContainer } from "@cloudflare/containers";
+import { Container } from "@cloudflare/containers";
 
 export class GlanceContainer extends Container {
   defaultPort = 8080;
@@ -11,8 +11,8 @@ interface Env {
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    const container = getContainer(env.GLANCE);
-    await container.start();
-    return container.fetch(request);
+    const id = env.GLANCE.idFromName("glance");
+    const stub = env.GLANCE.get(id);
+    return stub.fetch(request);
   },
 };
