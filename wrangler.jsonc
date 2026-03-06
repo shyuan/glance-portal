@@ -1,0 +1,12 @@
+{
+  "name": "glance-portal",
+  "main": "worker/src/index.ts",
+  "compatibility_date": "2026-03-06",
+  "containers": [
+    {
+      "name": "GLANCE",
+      "class_name": "GlanceContainer",
+      "image": "./Dockerfile"
+    }
+  ]
+}

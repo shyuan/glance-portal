@@ -1,0 +1,21 @@
+pages:
+  - name: Home
+    columns:
+      - size: small
+        widgets:
+          - type: clock
+            hour-format: 24h
+            timezones:
+              - timezone: Asia/Taipei
+                label: Taipei
+
+          - type: weather
+            location: Taipei, Taiwan
+
+      - size: full
+        widgets:
+          - type: rss
+            title: Hacker News
+            limit: 15
+            feeds:
+              - url: https://hnrss.org/frontpage
