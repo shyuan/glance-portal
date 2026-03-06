@@ -3,6 +3,7 @@
     - size: full
       widgets:
         - type: releases
+          token: ${GITHUB_TOKEN}
           cache: 1d
           repositories:
             - glanceapp/glance
