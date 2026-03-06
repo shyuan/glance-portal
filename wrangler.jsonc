@@ -13,7 +13,7 @@
   "migrations": [
     {
       "tag": "v1",
-      "new_classes": ["GlanceContainer"]
+      "new_sqlite_classes": ["GlanceContainer"]
     }
   ],
   "containers": [
