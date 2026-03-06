@@ -34,6 +34,9 @@ pages:
                 limit: 4
               - url: https://girlsplan.com/feed/
                 title: 女子的休假計劃
+      - size: full
+        widgets:
+          - type: hacker-news
       - size: small
         widgets:
           - type: weather
