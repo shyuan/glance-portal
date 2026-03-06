@@ -2,6 +2,7 @@
   "name": "glance-portal",
   "main": "worker/src/index.ts",
   "compatibility_date": "2026-03-06",
+  "compatibility_flags": ["nodejs_compat"],
   "durable_objects": {
     "bindings": [
       {
