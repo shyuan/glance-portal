@@ -1,0 +1,11 @@
+- name: Homelab
+  columns:
+    - size: full
+      widgets:
+    - size: full
+      widgets:
+        - type: releases
+          cache: 1d
+          repositories:
+            - glanceapp/glance
+            - curl/curl

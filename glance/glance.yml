@@ -1,21 +1,95 @@
+branding:
+  logo-text: C
+  app-name: Chris's Dashboard
+  hide-footer: true
+
+theme:
+  !include: theme-Teal-City.yml
 pages:
   - name: Home
+    width: wide
     columns:
       - size: small
         widgets:
           - type: clock
             hour-format: 24h
             timezones:
-              - timezone: Asia/Taipei
-                label: Taipei
-
+              - timezone: UTC
+                label: UTC
+              - timezone: Asia/Tokyo
+                label: Tokyo
+              - timezone: America/New_York
+                label: New York
+              - timezone: America/Los_Angeles
+                label: LA
+          - type: calendar
+            first-day-of-week: monday
+          - type: rss
+            title: 美食部落格
+            limit: 20
+            collapse-after: 10
+            cache: 12h
+            feeds:
+              - url: https://appletrees.tw/feed
+                limit: 4
+              - url: https://girlsplan.com/feed/
+                title: 女子的休假計劃
+      - size: small
+        widgets:
           - type: weather
             location: Taipei, Taiwan
-
+            units: metric
+            hour-format: 24h
+          - type: markets
+            markets:
+              - symbol: NVDA
+                name: NVIDIA
+              - symbol: AAPL
+                name: Apple
+              - symbol: TSM
+                name: TSMC ADR
+              - symbol: "0050.TW"
+                name: "0050"
+              - symbol: "2330.TW"
+                name: "TSMC"
+              - symbol: "00965.TW"
+                name: "00965"
+              - symbol: "00919.TW"
+                name: "00919"
+              - symbol: "0056.TW"
+                name: "0056"
+              - symbol: "00951.TW"
+                name: "00951"
+  - name: Search
+    hide-desktop-navigation: false
+    center-vertically: true
+    columns:
       - size: full
         widgets:
-          - type: rss
-            title: Hacker News
-            limit: 15
-            feeds:
-              - url: https://hnrss.org/frontpage
+          - type: search
+            autofocus: true
+            search-engine: google
+            bangs:
+              - title: YouTube
+                shortcut: "!yt"
+                url: https://www.youtube.com/results?search_query={QUERY}
+              - title: GitHub
+                shortcut: "!gh"
+                url: https://github.com/search?q={QUERY}
+              - title: Reddit
+                shortcut: "!r"
+                url: https://www.reddit.com/search/?q={QUERY}
+              - title: Google Maps
+                shortcut: "!map"
+                url: https://www.google.com/maps/search/{QUERY}
+          - type: bookmarks
+            groups:
+              - title: General
+                links:
+                  - title: Google
+                    url: https://www.google.com/
+                  - title: Helper Scripts
+                    url: https://github.com/community-scripts/ProxmoxVE
+  !include: page-dev.yml
+  !include: page-homelab.yml
+  !include: page-youtube.yml

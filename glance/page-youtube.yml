@@ -1,0 +1,76 @@
+- name: YouTube
+  width: wide
+  columns:
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: videos
+              title: 汽車
+              style: grid-cards
+              limit: 200
+              collapse-after-rows: 8
+              channels:
+                - UCee8oHYP2XfJRAChLjq-x5g
+                - UCnao4xB4LPLa6oFLjbOg0oQ
+                - UC3yaubKTJYiTcMmZHKjLzzw
+                - UC-MByr5LRnWmVN94Ija4XJg
+                - UC3xI2UOifrSTqpiBQuqEzIg
+                - UCG_gH6S-2ZUOtEw27uIS_QA
+                - UCPHesSBuipJcERtTuRSJh9g
+                - UCJ02ukKu8_g-O_JC2tIxzfg
+                - UCI4i_uldRR6zTLjWTEL8glQ
+                - UCTt03_juinrCyKUkYsu7E9g
+                - UCKEshOzNkXEAtt6h1zS0A6Q
+                - UCus1Bzmj_R4VLe4K59ksRoQ
+                - UCVbq2Gz2FNcGUnB7Y6efS9w
+            - type: videos
+              title: 歷史
+              style: grid-cards
+              limit: 200
+              collapse-after-rows: 8
+              channels:
+                - UCnDjkOVXO2Botpi8WnjvJbw
+                - UCKBBMJ8YNWQTUKQ8PtGDb2Q
+                - UC1z-ra3-iPNt1DwhXbJom-g
+                - UCaPtRO3mrb0QHDI_-1hvZcw
+                - UCOrcp--cu4Egwdc07X44btA
+                - UCvlclrQdVd1FLGR1RI21H3w
+                - UCrxYJy070whMSneURgFWTOg
+                - UCcmn-tBwdRzaagGXZYRcHpg
+                - UCIpRQFB5af6be62BpQyWbuA
+            - type: videos
+              title: 科技
+              style: grid-cards
+              limit: 200
+              collapse-after-rows: 8
+              channels:
+                - UCBJycsmduvYEL83R_U4JriQ
+                - UCXuqSBlHAE6Xw-yeJA0Tunw
+                - UCsTcErHg8oDvUnTzoqsYeNw
+                - UCWFKCr40YwOZQx8FHU_ZqqQ
+                - UC2Zn5hlv7_hPsLlh_xwcH6g
+                - UC5r-9EMDERXlUni-UWAtTdg
+                - UCpgUQ11xrXpsIlZOGdAskrQ
+                - UCzm5qZfDnckNgTELFA379qw
+            - type: videos
+              title: 投資理財
+              style: grid-cards
+              limit: 200
+              collapse-after-rows: 8
+              channels:
+                - UC23rnlQU_qE3cec9x709peA
+                - UCS_-6xYdiAKNjuCKJrnPk_g
+                - UCilwQlk62k1z7aUEZPOB6yw
+                - UC1DM2Ce_GfOLXs29cQ59iKg
+                - UCceGk_IAmSygU-RYUmC_EOw
+                - UCqULpqYsoBDTc_QswJOwMdQ
+            - type: videos
+              title: 政經
+              style: grid-cards
+              limit: 200
+              collapse-after-rows: 8
+              channels:
+                - UCCKdJQfcldhnd5LUlasJusw
+                - UCHY4xOBo9z03nceB6Pl-yzg
+    - size: small
