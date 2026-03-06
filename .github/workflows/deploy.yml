@@ -6,8 +6,10 @@ on:
       - main
     paths:
       - "glance/**"
+      - "worker/**"
       - "Dockerfile"
       - "wrangler.jsonc"
+      - "package.json"
   workflow_dispatch:
 
 jobs:
@@ -15,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v3
