@@ -2,6 +2,20 @@
   "name": "glance-portal",
   "main": "worker/src/index.ts",
   "compatibility_date": "2026-03-06",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "GLANCE",
+        "class_name": "GlanceContainer"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["GlanceContainer"]
+    }
+  ],
   "containers": [
     {
       "name": "GLANCE",
