@@ -1,0 +1,17 @@
+- name: RSS
+  width: wide
+  columns:
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: rss
+              title: 美食部落格
+              limit: 20
+              collapse-after: 10
+              cache: 12h
+              feeds:
+                - url: https://appletrees.tw/feed
+                  limit: 4
+                - url: https://girlsplan.com/feed/
+                  title: 女子的休假計劃

@@ -24,25 +24,12 @@ pages:
                 label: LA
           - type: calendar
             first-day-of-week: monday
-          - type: rss
-            title: 美食部落格
-            limit: 20
-            collapse-after: 10
-            cache: 12h
-            feeds:
-              - url: https://appletrees.tw/feed
-                limit: 4
-              - url: https://girlsplan.com/feed/
-                title: 女子的休假計劃
-      - size: full
-        widgets:
-          - type: hacker-news
-      - size: small
-        widgets:
           - type: weather
             location: Taipei, Taiwan
             units: metric
             hour-format: 24h
+      - size: full
+        widgets:
           - type: markets
             markets:
               - symbol: NVDA
@@ -93,6 +80,7 @@ pages:
                     url: https://www.google.com/
                   - title: Helper Scripts
                     url: https://github.com/community-scripts/ProxmoxVE
+  !include: page-rss.yml
   !include: page-dev.yml
   !include: page-homelab.yml
   !include: page-youtube.yml
