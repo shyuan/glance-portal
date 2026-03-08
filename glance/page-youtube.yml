@@ -8,7 +8,7 @@
             - type: videos
               title: 汽車
               style: grid-cards
-              limit: 200
+              limit: 100
               collapse-after-rows: 8
               channels:
                 - UCee8oHYP2XfJRAChLjq-x5g
@@ -27,7 +27,7 @@
             - type: videos
               title: 歷史
               style: grid-cards
-              limit: 200
+              limit: 100
               collapse-after-rows: 8
               channels:
                 - UCnDjkOVXO2Botpi8WnjvJbw
@@ -42,7 +42,7 @@
             - type: videos
               title: 科技
               style: grid-cards
-              limit: 200
+              limit: 100
               collapse-after-rows: 8
               channels:
                 - UCBJycsmduvYEL83R_U4JriQ
@@ -56,7 +56,7 @@
             - type: videos
               title: 投資理財
               style: grid-cards
-              limit: 200
+              limit: 100
               collapse-after-rows: 8
               channels:
                 - UC23rnlQU_qE3cec9x709peA
@@ -68,7 +68,7 @@
             - type: videos
               title: 政經
               style: grid-cards
-              limit: 200
+              limit: 100
               collapse-after-rows: 8
               channels:
                 - UCCKdJQfcldhnd5LUlasJusw
