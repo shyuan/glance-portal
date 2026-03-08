@@ -9,7 +9,7 @@ pages:
   - name: Home
     width: wide
     columns:
-      - size: small
+      - size: full
         widgets:
           - type: clock
             hour-format: 24h
@@ -24,91 +24,12 @@ pages:
                 label: LA
           - type: calendar
             first-day-of-week: monday
+      - size: full
+        widgets:
           - type: weather
             location: Taipei, Taiwan
             units: metric
             hour-format: 24h
-      - size: full
-        widgets:
-          - type: markets
-            title: 美股
-            markets:
-              - symbol: NVDA
-                name: NVIDIA
-              - symbol: AAPL
-                name: Apple
-              - symbol: TSM
-                name: TSMC ADR
-          - type: markets
-            title: 台股個股
-            markets:
-              - symbol: "2330.TW"
-                name: "台積電"
-              - symbol: "3661.TW"
-                name: "世芯-KY"
-              - symbol: "2454.TW"
-                name: "聯發科"
-              - symbol: "2317.TW"
-                name: "鴻海"
-              - symbol: "2412.TW"
-                name: "中華電"
-              - symbol: "2881.TW"
-                name: "富邦金"
-              - symbol: "2303.TW"
-                name: "聯電"
-              - symbol: "2882.TW"
-                name: "國泰金"
-              - symbol: "2603.TW"
-                name: "長榮"
-              - symbol: "2308.TW"
-                name: "台達電"
-              - symbol: "2884.TW"
-                name: "玉山金"
-              - symbol: "2887.TW"
-                name: "台新金"
-              - symbol: "2377.TW"
-                name: "微星"
-              - symbol: "3515.TW"
-                name: "華擎"
-              - symbol: "2357.TW"
-                name: "華碩"
-              - symbol: "3045.TW"
-                name: "台灣大"
-              - symbol: "4904.TW"
-                name: "遠傳"
-              - symbol: "2395.TW"
-                name: "研華"
-          - type: markets
-            title: 台股 ETF
-            markets:
-              - symbol: "0050.TW"
-                name: "元大台灣 50"
-              - symbol: "00965.TW"
-                name: "元大航太防衛科技"
-              - symbol: "00919.TW"
-                name: "群益台灣精選高息"
-              - symbol: "0056.TW"
-                name: "元大高股息"
-              - symbol: "00951.TW"
-                name: "台新日本半導體"
-              - symbol: "00728.TW"
-                name: "第一金工業 30"
-              - symbol: "00878.TW"
-                name: "國泰永續高股息"
-              - symbol: "00881.TW"
-                name: "國泰台灣 5G+"
-              - symbol: "00929.TW"
-                name: "復華台灣科技優息"
-              - symbol: "00939.TW"
-                name: "統一台灣高息動能"
-              - symbol: "00940.TW"
-                name: "元大台灣價值高息"
-              - symbol: "00920.TW"
-                name: "元大台灣 ESG 永續"
-              - symbol: "00735.TW"
-                name: "國泰臺韓科技"
-              - symbol: "00955.TW"
-                name: "元大台灣半導體精選 30"
   - name: Search
     hide-desktop-navigation: false
     center-vertically: true
@@ -139,6 +60,7 @@ pages:
                     url: https://www.google.com/
                   - title: Helper Scripts
                     url: https://github.com/community-scripts/ProxmoxVE
+  !include: page-investment.yml
   !include: page-rss.yml
   !include: page-dev.yml
   !include: page-homelab.yml
