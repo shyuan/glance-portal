@@ -1,2 +1,2 @@
-FROM ghcr.io/shyuan/glance-base:latest
+FROM ghcr.io/shyuan/glance-base:v0.8.6
 COPY glance/*.yml /
