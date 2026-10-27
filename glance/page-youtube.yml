@@ -73,4 +73,14 @@
               channels:
                 - UCCKdJQfcldhnd5LUlasJusw
                 - UCHY4xOBo9z03nceB6Pl-yzg
+            - type: videos
+              title: AI 知識筆記
+              style: grid-cards
+              limit: 100
+              collapse-after-rows: 8
+              channels:
+                - UCwzazmPZmox_pCyiBd3-6UQ
+                - UC_Kvz3mbTwLOyJzFPHmDwKQ
+                - UC5VWDUDSSSA9FDI-NiLQzuw
+                - UCaqsMCrh55lXxloj9p5D8UA
     - size: small
